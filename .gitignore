@@ -1,0 +1,3 @@
+node_modules
+# Ignore node_modules inside backend/api
+backend/api/node_modules/
