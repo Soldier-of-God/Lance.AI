@@ -1,0 +1,6 @@
+node_modules
+<<<<<<< Updated upstream
+# Ignore node_modules inside backend/api
+backend/api/node_modules/
+=======
+>>>>>>> Stashed changes

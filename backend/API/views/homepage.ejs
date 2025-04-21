@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lance</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/src/styling/landingPage.css" rel="stylesheet">
+    <script src="/js/script.js"></script>
+    <link href="/landingPage.css" rel="stylesheet">
     
 </head>
 <body class="bg-gray-100">
 
     <nav class="bg-white shadow-md">
         <section class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-2xl font-bold text-blue-600">Lance</h1>
+            <h1 class="text-2xl font-bold text-blue-600" href="/">Lance</h1>
             <ul class="hidden md:flex space-x-6">
-                <li><a href="#" class="text-gray-600 hover:text-blue-500">Home</a></li>
+                <li><a href="/" class="text-gray-600 hover:text-blue-500">Home</a></li>
                 <li><a href="#" class="text-gray-600 hover:text-blue-500">About</a></li>
                 <li><a href="#" class="text-gray-600 hover:text-blue-500">Services</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+                <li><a href="/contacts" class="text-gray-600 hover:text-blue-500">Contact</a></li>
             </ul>
             <button class="md:hidden text-gray-600">☰</button>
         </section>
     </nav>
 
-    <header id="header1" class="h-screen flex flex-col items-center justify-center text-center bg-cover bg-center bg-[url('/src/assets/landingPageBackground.gif')] text-white">
+    <header id="header1" class="h-screen flex flex-col items-center justify-center text-center bg-cover bg-center bg-[url('/landingPageBackground.gif')] text-white">
         <h1 id="welcome" class="text-6xl font-bold mb-4">Welcome to LanceAI</h1>
         <p id="welcomeMsg" class="text-lg mb-6">We help you find the best freelancers in the game!</p>
-        <a id="getStartedBtn" href="#" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
+        <a id="getStartedBtn" href="/auth/google" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
             Get Started
         </a>
     </header>
@@ -51,10 +52,10 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="bg-blue-600 text-white py-16 text-center">
+    <section class="bg-blue-600 text-whi`te py-16 text-center">
         <h2 class="text-3xl font-bold">Ready to get started?</h2>
         <p class="mt-2 text-lg">Join us today and take your business to the next level.</p>
-        <a id="signUpBtn" href="#" class="mt-4 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-gray-200 transition">
+        <a id="signUpBtn" href="/auth/google" class="mt-4 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-gray-200 transition">
             Sign Up Now
         </a>
     </section>
@@ -65,3 +66,8 @@
 
 </body>
 </html>
+
+
+<!-- <% error.forEach(err=>{ %>
+                        <p style="color:red;" class="notice"><%=err.message%></p>
+                   <% }) %> -->
